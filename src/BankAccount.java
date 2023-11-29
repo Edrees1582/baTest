@@ -16,6 +16,11 @@ public class BankAccount {
         this.ownerName = ownerName;
         this.balance = balance;
     }
+	
+	public void withdraw(double amount) {
+        System.out.print("Account Owner: " + ownerName + "\nWithdrawn $" + amount);
+        System.out.println(", Current balance: $" + balance);
+    }
 
     public String getOwnerName() {
         return ownerName;
